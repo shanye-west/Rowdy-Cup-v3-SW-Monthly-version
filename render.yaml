@@ -3,7 +3,7 @@ services:
     name: rowdy-cup-scoreboard-api
     env: node
     buildCommand: npm install && npm run build:server
-    startCommand: cd /opt/render/project/src && node dist/index.js
+    startCommand: node index.js
     envVars:
       - key: DATABASE_URL
         sync: false

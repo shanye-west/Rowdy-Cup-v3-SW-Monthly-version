@@ -1,0 +1,11 @@
+{
+  "buildCommand": "npm run build:client",
+  "outputDirectory": "dist/public",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://rowdy-cup-scoreboard-api.onrender.com/api/$1"
+    }
+  ]
+} 
